@@ -8,7 +8,7 @@
 // @include       https://avtc.avtechcloud.*/* 
 // @copyright     2014, klogzoog
 // @run-at        document-end
-// @updateURL     http://klogzoog.com/sfo/AvtechImp.js
+// @updateURL     https://raw.githubusercontent.com/klogzoog/AvtechImp/master/AvtechImp_Dev.js
 // @require       https://jquery-timer.googlecode.com/svn/trunk/jquery.timer.js
 // @require       http://swip.codylindley.com/jquery.popupWindow.js
 // ==/UserScript==
