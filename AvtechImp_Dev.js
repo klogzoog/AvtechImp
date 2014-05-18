@@ -232,15 +232,15 @@ $(function(){
                     $(buid+kuid+" td").mouseup();
                     $(buid+kuid+" td").click();
                     
-                    console.log(value.uid);
-                    console.log(kuid[0]);
+                    //console.log(value.uid);
+                    //console.log(kuid[0]);
                 } else if (arr.length > 1){
                     e = 1;
                     $("#infov").html("<small>(press the + for next)  </small>" + e + " / "+ arr.length );
                 }
                     $(buid).scrollTo(kuid, 10);
                 $(buid+kuid).addClass("k-state-selected");
-                console.log(arr.length);
+                //console.log(arr.length);
             });
         } 
     }
