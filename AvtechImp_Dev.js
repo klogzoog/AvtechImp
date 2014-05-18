@@ -45,7 +45,7 @@ $(function(){
         var o = l;
         
         //$("#dispatchActiveEmployeeDetailGrid .k-grid-content .k-selectable colgroup").append("<col style='width:190px'>");
-        
+        // code for unit looked up
         for (i = 0; i < o; i++){
             
             
