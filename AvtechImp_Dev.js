@@ -20,7 +20,7 @@ $(function(){
     inActform = '<div class="header-button-right"><span id="infov"></span><input placeholder="please wait..." type="text" id="inActSearch" value=""></div>';
     // $("#dispatchInprogressCallsHeader").find(".dispatch-calls-close").after(form);
     //header = $("#dispatchActiveEmployeesHeader");
-    header = $("#futureInfo");
+    header = $("#logindisplay");
     inActheader = $("#dispatchInactiveEmployeesHeader");
     
     header.append(form);
