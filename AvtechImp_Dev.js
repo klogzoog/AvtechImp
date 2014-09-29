@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Avtech Improvements
 // @namespace     http://klogzoog.com/
-// @version       0.6.8.8
+// @version       0.6.8.9
 // @description   Avtech Dispatch Featured Unit Search and Flight Details
 // @match         https://avtc.avtechcloud.com/
 // @include       http://avtc.avtechcloud.com/*
