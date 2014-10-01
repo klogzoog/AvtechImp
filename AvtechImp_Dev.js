@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Avtech Improvements
 // @namespace     http://klogzoog.com/
-// @version       0.6.9.0
+// @version       0.6.9.1
 // @description   Avtech Dispatch Featured Unit Search and Flight Details
 // @match         https://avtc.avtechcloud.com/
 // @include       http://avtc.avtechcloud.com/*
@@ -16,7 +16,7 @@
 $(function(){
     var dataa;
     var Enpressed = 0;
-    form = '<div class="header-button-right"><span id="infov"></span><input placeholder="please wait..." type="text" id="unitSearch" value=""></div>';
+    form = '<div class="header-button-right"><span id="infov"></span><input placeholder="please wait..." type="text" id="unitSearch" value=""> | </div>';
     inActform = '<div class="header-button-right"><span id="infov"></span><input placeholder="please wait..." type="text" id="inActSearch" value=""></div>';
     // $("#dispatchInprogressCallsHeader").find(".dispatch-calls-close").after(form);
     //header = $("#dispatchActiveEmployeesHeader");
