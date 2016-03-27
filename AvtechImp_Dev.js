@@ -35,7 +35,7 @@ $(function(){
         //console.log("click");
     });
     var fltdata, flight, l;
-    var timer = $.timer(function(){
+    <!--var timer = $.timer(function(){
         var x;
         if (avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data !== undefined){
             l = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data.length;
@@ -76,7 +76,7 @@ $(function(){
     });
     
     timer.set({ time : 1000, autostart : true });
-    
+    -->
     
     
     function searchInCalls(f, t, r){
