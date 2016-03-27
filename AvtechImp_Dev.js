@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Avtech Improvements
 // @namespace     http://klogzoog.com/
-// @version       0.6.9.3
+// @version       0.6.9.4
 // @description   Avtech Dispatch Featured Unit Search and Flight Details
 // @match         https://avtc.avtechcloud.com/
 // @include       http://avtc.avtechcloud.com/*
@@ -35,48 +35,48 @@ $(function(){
         //console.log("click");
     });
     var fltdata, flight, l;
-    <!--var timer = $.timer(function(){
-        var x;
-        if (avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data !== undefined){
-            l = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data.length;
-        } else {
-            //console.log("no data found");
-        }
-        
-        var o = l;
-        
-        //$("#dispatchActiveEmployeeDetailGrid .k-grid-content .k-selectable colgroup").append("<col style='width:190px'>");
-        
-        for (i = 0; i < o; i++){
-            
-            
-            var fa = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[i].FlightNumber;
-            var EmpdetailGrid = "#dispatchActiveEmployeeDetailGrid .k-grid-content .k-selectable tbody tr:eq("+i+") td:eq(1)";
-            
-            $(EmpdetailGrid).html('<a data-q="'+i+'" id="flfind">'+fa+'</a>');
-            $(EmpdetailGrid).css('cursor','pointer');
-            
-            
-            
-            $("#flfind[data-q='"+i+"']").on('click', {el:i}, function(v){
-                
-                //console.log(v.data.el);
-                e = v.data.el;
-                a = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].CallTime;
-                r = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].RequirementName;
-                d = new Date(a);
-                t = d.getTime();
-                f = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].FlightNumber;
-                //console.log("Flight No# " + avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].FlightNumber);
-                //console.log("Time : " + t);
-                searchInCalls(f,t,r);
-            });
-        }
-        
-    });
+//    var timer = $.timer(function(){
+//        var x;
+//        if (avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data !== undefined){
+//            l = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data.length;
+//        } else {
+//            //console.log("no data found");
+//        }
+//        
+//        var o = l;
+//        
+//        //$("#dispatchActiveEmployeeDetailGrid .k-grid-content .k-selectable colgroup").append("<col style='width:190px'>");
+//        
+//        for (i = 0; i < o; i++){
+//            
+//            
+//            var fa = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[i].FlightNumber;
+//            var EmpdetailGrid = "#dispatchActiveEmployeeDetailGrid .k-grid-content .k-selectable tbody tr:eq("+i+") td:eq(1)";
+//            
+//            $(EmpdetailGrid).html('<a data-q="'+i+'" id="flfind">'+fa+'</a>');
+//            $(EmpdetailGrid).css('cursor','pointer');
+//            
+//            
+//            
+//            $("#flfind[data-q='"+i+"']").on('click', {el:i}, function(v){
+//                
+//                //console.log(v.data.el);
+//                e = v.data.el;
+//                a = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].CallTime;
+//                r = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].RequirementName;
+//                d = new Date(a);
+//                t = d.getTime();
+//                f = avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].FlightNumber;
+//                //console.log("Flight No# " + avtc.dispatchState.dispatchActiveEmployeeCallDetailGrid._data[e].FlightNumber);
+//                //console.log("Time : " + t);
+//                searchInCalls(f,t,r);
+//            });
+//        }
+//        
+//    });
+//    
+//    timer.set({ time : 1000, autostart : true });
     
-    timer.set({ time : 1000, autostart : true });
-    -->
     
     
     function searchInCalls(f, t, r){
