@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Avtech Improvements
 // @namespace     http://klogzoog.com/
-// @version       0.6.9.4
+// @version       0.6.9.5
 // @description   Avtech Dispatch Featured Unit Search and Flight Details
 // @match         https://avtc.avtechcloud.com/
 // @include       http://avtc.avtechcloud.com/*
@@ -77,7 +77,11 @@ $(function(){
 //    
 //    timer.set({ time : 1000, autostart : true });
     
-    
+    setInterval(function(){
+       var currentTime = new Date();
+       $("#contractInfo").html("<a id='masterContractInfo'>" + currentTime + "</a>");
+   }, 1000);
+
     
     function searchInCalls(f, t, r){
         var s, o , k;
